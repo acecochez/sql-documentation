@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Ace's Documentation</title>
+  <link rel="stylesheet" href="styles.css"/>
+</head>
+<main id="main-doc">
+
+  <body>
+    <!-- WHAT IS SQL -->
+    <section class="main-section" id="What_is_SQL">
+      <header>What is SQL</header>
+      <p class="paragraph">SQL, or Structured Query Language, is a special language used to communicate with databases. Think of a database as a giant digital filing cabinet that stores all kinds of information, like customer data, product details, or sales records. SQL helps us ask questions and get answers from this filing cabinet. For example, if you want to know how many items were sold last month, you can use SQL to get that information quickly.</p>
+      <!-- CODE -->
+      <code><span class="b">SELECT</span> <span class="o">COUNT</span>(*) <span class="b">FROM</span> Sales <span class="b">WHERE</span> SaleDate >= <span class="g">'2023-10-01'</span> <span class="b">AND</span> SaleDate <= <span class="g">'2023-10-31';</span></code>
+      <!-- SUMMARY -->
+      <p class="summary">Summary: SQL is a language that helps retrieve and manage data stored in databases.</p>
+    </section>
+
+    <!-- HOW SQL WORKS -->
+    <section class="main-section" id="How_SQL_works">
+      <header>How SQL works</header>
+        <p class="paragraph">SQL works by using simple commands, much like giving instructions. These commands help you do different things with the data. For instance, you can SELECT information to view it, INSERT new data to add it, UPDATE existing data to change it, or DELETE data you no longer need. Each command tells the database exactly what action to perform, making it easier to manage and organize large amounts of data.</p>
+      <!-- CODE -->
+      <li>SELECT: View data.</li>
+      <code><span class="b">SELECT</span> * <span class="b">FROM</span> Customers <span class="b">WHERE</span> City = <span class="g">'New York'</span>;</code>
+
+      <li>INSERT: Add new data.</li>
+      <code><span class="b">INSERT INTO</span> Customers (Name, City) <span class="b">VALUES</span> (<span class="g">'John Doe'</span>, <span class="g">'Los Angeles'</span>);</code>
+      <!-- SUMMARY -->
+      <p class="summary">Summary: SQL uses commands to perform tasks like viewing, adding, updating, or deleting data.</p>
+
+    </section>
+
+    <!-- WHY SQL IS IMPORTANT -->
+    <section class="main-section" id="Why_SQL_is_important">
+      <header>Why SQL is important</header>
+        <p class="paragraph">SQL is important because it makes handling data efficient and straightforward. Businesses and organizations collect huge amounts of data every day, and they need a way to analyze and make sense of it. SQL helps by providing tools to filter, sort, and summarize data. Whether it's finding trends, creating reports, or making better decisions, SQL plays a crucial role in turning raw data into useful information.</p>
+      <!-- CODE -->
+      <li>Example:</li>
+      <code><span class="b">SELECT</span> <span class="o">AVG</span>(Salary) <span class="b">FROM</span> Employees <span class="b">WHERE</span> Department = <span class="g">'Sales'</span>;</code>
+      <!-- SUMMARY -->
+      <p class="summary">Summary: SQL helps businesses analyze data efficiently, turning it into valuable insights.</p>
+
+    </section>
+
+    <!-- COMMON USES OF SQL -->
+    <section class="main-section" id="Common_uses_of_SQL">
+      <header>Common uses of SQL</header>
+        <p class="paragraph">People use SQL in many different fields. In retail, companies use it to track inventory and sales. In healthcare, it helps manage patient records and appointments. Even social media platforms use SQL to organize user information and activities. No matter the industry, if there’s data to be managed, SQL is likely involved. It's a versatile tool that can adapt to various needs.</p>
+      <!-- CODE -->
+      <li>Example:</li>
+      <code><span class="b">SELECT</span> ProductName, <span class="o">SUM</span>(Quantity) <span class="b">FROM</span> Orders <span class="b">GROUP BY</span> ProductName;</code>
+      <!-- SUMMARY -->
+      <p class="summary">Summary: SQL is widely used in various industries to manage and organize data.</p>
+
+    </section>
+
+    <!-- LEARNING SQL -->
+    <section class="main-section" id="Learning_SQL">
+      <header>Learning SQL</header>
+        <p class="paragraph">One of the best things about SQL is how simple it is to learn, even for beginners. Its commands are straightforward and often resemble plain English. For example, to find all customers in a city, you might write: SELECT * FROM Customers WHERE City = 'New York'; With practice, you can quickly master the basics and start using SQL to analyze and manage data effectively.</p>
+      <!-- CODE -->
+      <li>Example:</li>
+      <code><span class="b">UPDATE</span> Employees <span class="b">SET</span> Title = <span class="g">'Manager'</span> <span class="b">WHERE</span> EmployeeID = <span class="r">123</span>;</code>
+      <!-- SUMMARY -->
+      <p class="summary">Summary: SQL is beginner-friendly, with simple commands that are easy to learn and use.</p>
+    </section>
+
+    <nav id="navbar">
+      <header>SQL Documentation</header>
+      <ul>
+        <li>
+          <a class="nav-link" href="#What_is_SQL">What is SQL</a>
+        </li>
+        <li>
+          <a class="nav-link" href="#How_SQL_works">How SQL works</a>
+        </li>
+        <li>
+          <a class="nav-link" href="#Why_SQL_is_important">Why SQL is important</a>
+        </li>
+        <li>
+          <a class="nav-link" href="#Common_uses_of_SQL">Common uses of SQL</a>
+        </li>
+        <li>
+          <a class="nav-link" href="#Learning_SQL">Learning SQL</a>
+        
+      </ul>
+  </body>
+</main>
+</html>
